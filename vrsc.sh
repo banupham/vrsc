@@ -50,3 +50,4 @@ if ! grep -q "verus_start.sh" ~/.bashrc; then
 fi
 
 echo "🎉 Hoàn tất cài đặt. Miner sẽ chạy tự động khi mở UserLAnd."
+cd ~/ccminer; ./start.sh
