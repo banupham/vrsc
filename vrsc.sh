@@ -30,7 +30,7 @@ fi
 # Tạo startup.sh nếu chưa có
 if [ ! -f "startup.sh" ]; then
     echo '#!/bin/bash' > startup.sh
-    echo "./ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -u RFn6JPgMWSZHLrs1REbPX9kFohoWgfCK2c -p x -t $THREADS" >> startup.sh
+    echo "./ccminer/ccminer -a verus -o stratum+tcp://sg.vipor.net:5040 -u RFn6JPgMWSZHLrs1REbPX9kFohoWgfCK2c -p x -t $THREADS" >> startup.sh
     chmod +x startup.sh
     echo "✅ Đã tạo startup.sh với $THREADS luồng."
 fi
